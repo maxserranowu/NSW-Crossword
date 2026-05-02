@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Crossword — Nancy Serrano-Wu</title>
+<meta name="description" content="An archive of every crossword constructed by Nancy Serrano-Wu, in the style of The New York Times Crossword.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Libre+Franklin:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%23fff'/%3E%3Crect x='14' y='4' width='8' height='8' fill='%23fff'/%3E%3Crect x='4' y='14' width='8' height='8' fill='%23fff'/%3E%3Crect x='14' y='14' width='8' height='8' fill='%23F4D03F'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ===== MASTHEAD ===== -->
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="masthead-side">
+      <span class="date-stamp" id="todayDate"></span>
+    </div>
+    <div class="masthead-logo">
+      <a href="#" class="logo-link">
+        <span class="logo-the">The</span>
+        <span class="logo-crossword">Crossword</span>
+      </a>
+      <div class="logo-tag">An Archive of Nancy Serrano-Wu</div>
+    </div>
+    <div class="masthead-side right">
+      <span class="account-link">Account</span>
+    </div>
+  </div>
+  <nav class="topnav">
+    <a href="#today" class="topnav-item active">Today</a>
+    <a href="#archive" class="topnav-item">Archive</a>
+    <a href="#stats" class="topnav-item">By the Numbers</a>
+    <a href="#calendar" class="topnav-item">Calendar</a>
+    <a href="#about" class="topnav-item">About</a>
+    <a href="#subscribe" class="topnav-item">Subscribe</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== HERO: TODAY'S PUZZLE ===== -->
+<section id="today" class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="kicker">Latest Puzzle</p>
+      <h1 class="hero-title" id="latestTitle">—</h1>
+      <p class="hero-byline">By <span class="byline-name">Nancy Serrano-Wu</span></p>
+      <p class="hero-meta" id="latestMeta">—</p>
+      <a class="play-btn" id="latestPlayBtn" href="#" target="_blank" rel="noopener">
+        <span>Play</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3L10 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-art">
+      <div class="hero-tiles" id="heroTiles"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRIP OF CARDS ===== -->
+<section class="card-strip">
+  <h2 class="section-title">More from Nancy</h2>
+  <div class="card-grid" id="cardStrip"></div>
+</section>
+
+<!-- ===== ARCHIVE ===== -->
+<section id="archive" class="archive-section">
+  <div class="archive-header">
+    <h2 class="section-title">Archive</h2>
+    <div class="archive-controls">
+      <input type="search" id="searchBox" placeholder="Search titles, themes, clues…" />
+      <select id="venueFilter">
+        <option value="">All venues</option>
+      </select>
+      <select id="yearFilter">
+        <option value="">All years</option>
+      </select>
+      <button id="clearFilters" class="ghost-btn">Reset</button>
+    </div>
+  </div>
+  <p class="archive-count" id="archiveCount"></p>
+  <div class="archive-list" id="archiveList"></div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats" class="stats-section">
+  <h2 class="section-title">By the Numbers</h2>
+  <div class="stats-grid">
+    <div class="stat-card big-stat">
+      <div class="stat-value" id="statTotal">—</div>
+      <div class="stat-label">Puzzles published</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statVenues">—</div>
+      <div class="stat-label">Different venues</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statYears">—</div>
+      <div class="stat-label">Years constructing</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statDebut">—</div>
+      <div class="stat-label">Debut</div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stats-panel">
+      <h3 class="panel-title">By Venue</h3>
+      <div id="venueChart" class="bar-chart"></div>
+    </div>
+    <div class="stats-panel">
+      <h3 class="panel-title">By Year</h3>
+      <div id="yearChart" class="bar-chart"></div>
+    </div>
+    <div class="stats-panel">
+      <h3 class="panel-title">By Day of Week</h3>
+      <div id="dowChart" class="bar-chart"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALENDAR ===== -->
+<section id="calendar" class="calendar-section">
+  <h2 class="section-title">Publication Calendar</h2>
+  <p class="section-sub">Each filled square marks a published crossword. Hover for details.</p>
+  <div class="calendar-controls">
+    <span class="cal-legend">Less</span>
+    <span class="cal-legend-cell c0"></span>
+    <span class="cal-legend-cell c1"></span>
+    <span class="cal-legend-cell c2"></span>
+    <span class="cal-legend-cell c3"></span>
+    <span class="cal-legend">More</span>
+  </div>
+  <div id="calendarHeatmap" class="calendar-heatmap"></div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about-section">
+  <h2 class="section-title">About the Constructor</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="lede">Nancy Serrano-Wu is a Latina (Colombian) crossword constructor and immigration attorney based in Belmont, Massachusetts.</p>
+      <p>She made her New York Times debut on Wednesday, January 25, 2023 — joining the small but growing ranks of published Latina constructors. Her puzzles aim to be inclusive and reflect a multicultural world, drawing on her family's heritage with answers like PAPI and BABA.</p>
+      <p>In addition to the NYT, she has been published in the Los Angeles Times, Wall Street Journal, USA Today's Universal puzzle, the Inkubator, AVCX, Lil AVC X, Puzzmo, the Modern Crossword, and Slate, where she contributes regularly to the daily puzzle.</p>
+      <p>Featured in the documentary on representation in crosswords, Nancy began constructing puzzles as birthday gifts and has since become a leading voice for inclusive cluing.</p>
+    </div>
+    <aside class="about-side">
+      <h4>Where she's been published</h4>
+      <ul id="venueList" class="venue-list"></ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== SUBSCRIBE + CONTACT ===== -->
+<section id="subscribe" class="subscribe-section">
+  <div class="subscribe-grid">
+    <div class="subscribe-panel primary">
+      <p class="sub-kicker">Newsletter</p>
+      <h2 class="sub-title">Never miss a Nancy puzzle.</h2>
+      <p class="sub-body">Get an email whenever a new Nancy Serrano-Wu crossword is added — across Slate, the NYT, Puzzmo, and beyond. One email per puzzle. No spam, ever.</p>
+      <form id="subscribeForm" class="sub-form" action="https://buttondown.com/api/emails/embed-subscribe/YOUR-USERNAME" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/YOUR-USERNAME', 'popupwindow')">
+        <input type="email" name="email" id="subscribeEmail" placeholder="you@example.com" required>
+        <button type="submit" class="sub-btn">
+          <span>Subscribe</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3L10 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="sub-fineprint">Powered by <a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a> · Unsubscribe anytime.</p>
+    </div>
+    <div class="subscribe-panel">
+      <p class="sub-kicker">Get in touch</p>
+      <h2 class="sub-title">Send a note.</h2>
+      <p class="sub-body">Spotted a puzzle we missed? Want to say hi? Send a message and it lands in our inbox.</p>
+      <form id="contactForm" class="sub-form vertical" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Your message…" required></textarea>
+        <button type="submit" class="sub-btn">
+          <span>Send message</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3L10 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="sub-fineprint">Powered by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-the small">The</span>
+      <span class="logo-crossword small">Crossword</span>
+    </div>
+    <p class="footer-note">An unofficial fan archive · Built with care for puzzles by Nancy Serrano-Wu</p>
+    <p class="footer-copy">Data compiled from Slate, Daily Crossword Links, XWord Info, and other public sources.</p>
+  </div>
+</footer>
+
+<!-- Detail modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="transform:translate(-${scrollX}px,-${scrollY}px);transform-origin:top left">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
