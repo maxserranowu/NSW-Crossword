@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-05-28",
+      "date_display": "May 28, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 5,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "State That Runs on Maple and Flannel",
+      "full_title": "State That Runs on Maple and Flannel (Seven Letters)",
+      "letters_clue": "Seven Letters",
+      "url": "https://slate.com/life/2026/05/crossword-slate-daily-puzzle-may-28-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-05-14",
       "date_display": "May 14, 2026",
       "day_of_week": "Thursday",
@@ -1157,9 +1172,9 @@
     }
   ],
   "stats": {
-    "total": 77,
+    "total": 78,
     "venues": {
-      "Slate": 57,
+      "Slate": 58,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1171,14 +1186,14 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 13,
+      "2026": 14,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
-      "Thursday": 36,
+      "Thursday": 37,
       "Sunday": 15,
       "Tuesday": 9,
       "Wednesday": 6,
@@ -1189,11 +1204,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-05-14",
-    "latest_date_display": "May 14, 2026",
+    "latest_date": "2026-05-28",
+    "latest_date_display": "May 28, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Is in French?",
-    "latest_url": "https://slate.com/life/2026/05/crossword-slate-daily-puzzle-may-14-2026.html"
+    "latest_title": "State That Runs on Maple and Flannel",
+    "latest_url": "https://slate.com/life/2026/05/crossword-slate-daily-puzzle-may-28-2026.html"
   },
-  "last_updated": "2026-05-27T15:28:44Z"
+  "last_updated": "2026-05-28T15:41:20Z"
 }
