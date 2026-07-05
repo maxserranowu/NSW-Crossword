@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-07-05",
+      "date_display": "Jul 05, 2026",
+      "day_of_week": "Sunday",
+      "year": 2026,
+      "month": 7,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Crossword Slate Daily Puzzle July 5 2026",
+      "full_title": "Crossword Slate Daily Puzzle July 5 2026",
+      "letters_clue": null,
+      "url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-5-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-07-02",
       "date_display": "Jul 02, 2026",
       "day_of_week": "Thursday",
@@ -1202,9 +1217,9 @@
     }
   ],
   "stats": {
-    "total": 80,
+    "total": 81,
     "venues": {
-      "Slate": 60,
+      "Slate": 61,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1216,15 +1231,15 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 16,
+      "2026": 17,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Sunday": 16,
       "Thursday": 39,
-      "Sunday": 15,
       "Tuesday": 9,
       "Wednesday": 6,
       "Friday": 2,
@@ -1234,11 +1249,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-07-02",
-    "latest_date_display": "Jul 02, 2026",
+    "latest_date": "2026-07-05",
+    "latest_date_display": "Jul 05, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Scaredy-Cat \u2026 or a Tiny Dog",
-    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-2-2026.html"
+    "latest_title": "Crossword Slate Daily Puzzle July 5 2026",
+    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-5-2026.html"
   },
-  "last_updated": "2026-07-04T13:14:22Z"
+  "last_updated": "2026-07-05T13:21:42Z"
 }
