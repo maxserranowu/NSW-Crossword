@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-07-13",
+      "date_display": "Jul 13, 2026",
+      "day_of_week": "Monday",
+      "year": 2026,
+      "month": 7,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Iron Man?",
+      "full_title": "Iron Man? (Six Letters)",
+      "letters_clue": "Six Letters",
+      "url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-13-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-07-05",
       "date_display": "Jul 05, 2026",
       "day_of_week": "Sunday",
@@ -1217,9 +1232,9 @@
     }
   ],
   "stats": {
-    "total": 81,
+    "total": 82,
     "venues": {
-      "Slate": 61,
+      "Slate": 62,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1231,29 +1246,29 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 17,
+      "2026": 18,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Monday": 5,
       "Sunday": 16,
       "Thursday": 39,
       "Tuesday": 9,
       "Wednesday": 6,
       "Friday": 2,
-      "Saturday": 5,
-      "Monday": 4
+      "Saturday": 5
     },
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-07-05",
-    "latest_date_display": "Jul 05, 2026",
+    "latest_date": "2026-07-13",
+    "latest_date_display": "Jul 13, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Crossword Slate Daily Puzzle July 5 2026",
-    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-5-2026.html"
+    "latest_title": "Iron Man?",
+    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-13-2026.html"
   },
-  "last_updated": "2026-07-12T13:09:42Z"
+  "last_updated": "2026-07-13T14:23:18Z"
 }
