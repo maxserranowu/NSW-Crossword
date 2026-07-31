@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-07-30",
+      "date_display": "Jul 30, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 7,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "One Known for Pipes, Musically Speaking?",
+      "full_title": "One Known for Pipes, Musically Speaking? (Five Letters)",
+      "letters_clue": "Five Letters",
+      "url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-30-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-07-23",
       "date_display": "Jul 23, 2026",
       "day_of_week": "Thursday",
@@ -1247,9 +1262,9 @@
     }
   ],
   "stats": {
-    "total": 83,
+    "total": 84,
     "venues": {
-      "Slate": 63,
+      "Slate": 64,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1261,14 +1276,14 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 19,
+      "2026": 20,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
-      "Thursday": 40,
+      "Thursday": 41,
       "Monday": 5,
       "Sunday": 16,
       "Tuesday": 9,
@@ -1279,11 +1294,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-07-23",
-    "latest_date_display": "Jul 23, 2026",
+    "latest_date": "2026-07-30",
+    "latest_date_display": "Jul 30, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Crossword Slate Daily Puzzle July 23 2026",
-    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-23-2026.html"
+    "latest_title": "One Known for Pipes, Musically Speaking?",
+    "latest_url": "https://slate.com/life/2026/07/crossword-slate-daily-puzzle-july-30-2026.html"
   },
-  "last_updated": "2026-07-30T13:47:38Z"
+  "last_updated": "2026-07-31T13:52:55Z"
 }
