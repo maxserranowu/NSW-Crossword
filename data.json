@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-08-20",
+      "date_display": "Aug 20, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 8,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Catalyst for the Boston Tea Party",
+      "full_title": "Catalyst for the Boston Tea Party (Three Letters)",
+      "letters_clue": "Three Letters",
+      "url": "https://slate.com/life/2026/08/crossword-slate-daily-puzzle-aug-20-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-08-10",
       "date_display": "Aug 10, 2026",
       "day_of_week": "Monday",
@@ -1277,9 +1292,9 @@
     }
   ],
   "stats": {
-    "total": 85,
+    "total": 86,
     "venues": {
-      "Slate": 65,
+      "Slate": 66,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1291,15 +1306,15 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 21,
+      "2026": 22,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Thursday": 42,
       "Monday": 6,
-      "Thursday": 41,
       "Sunday": 16,
       "Tuesday": 9,
       "Wednesday": 6,
@@ -1309,11 +1324,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-08-10",
-    "latest_date_display": "Aug 10, 2026",
+    "latest_date": "2026-08-20",
+    "latest_date_display": "Aug 20, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Place for a Purr-sonal Makeover",
-    "latest_url": "https://slate.com/life/2026/08/crossword-slate-daily-puzzle-aug-10-2026.html"
+    "latest_title": "Catalyst for the Boston Tea Party",
+    "latest_url": "https://slate.com/life/2026/08/crossword-slate-daily-puzzle-aug-20-2026.html"
   },
-  "last_updated": "2026-08-19T12:36:04Z"
+  "last_updated": "2026-08-20T12:37:17Z"
 }
