@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-09-10",
+      "date_display": "Sep 10, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 9,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Like a Filled Crossword",
+      "full_title": "Like a Filled Crossword (Six Letters)",
+      "letters_clue": "Six Letters",
+      "url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-10-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-08-20",
       "date_display": "Aug 20, 2026",
       "day_of_week": "Thursday",
@@ -1292,9 +1307,9 @@
     }
   ],
   "stats": {
-    "total": 86,
+    "total": 87,
     "venues": {
-      "Slate": 66,
+      "Slate": 67,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1306,14 +1321,14 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 22,
+      "2026": 23,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
-      "Thursday": 42,
+      "Thursday": 43,
       "Monday": 6,
       "Sunday": 16,
       "Tuesday": 9,
@@ -1324,11 +1339,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-08-20",
-    "latest_date_display": "Aug 20, 2026",
+    "latest_date": "2026-09-10",
+    "latest_date_display": "Sep 10, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Catalyst for the Boston Tea Party",
-    "latest_url": "https://slate.com/life/2026/08/crossword-slate-daily-puzzle-aug-20-2026.html"
+    "latest_title": "Like a Filled Crossword",
+    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-10-2026.html"
   },
-  "last_updated": "2026-09-09T15:48:26Z"
+  "last_updated": "2026-09-10T15:43:40Z"
 }
