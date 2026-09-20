@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-09-20",
+      "date_display": "Sep 20, 2026",
+      "day_of_week": "Sunday",
+      "year": 2026,
+      "month": 9,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Working Pretty Dam Hard?",
+      "full_title": "Working Pretty Dam Hard? (13 Letters)",
+      "letters_clue": "13 Letters",
+      "url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-20-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-09-10",
       "date_display": "Sep 10, 2026",
       "day_of_week": "Thursday",
@@ -1307,9 +1322,9 @@
     }
   ],
   "stats": {
-    "total": 87,
+    "total": 88,
     "venues": {
-      "Slate": 67,
+      "Slate": 68,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1321,16 +1336,16 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 23,
+      "2026": 24,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Sunday": 17,
       "Thursday": 43,
       "Monday": 6,
-      "Sunday": 16,
       "Tuesday": 9,
       "Wednesday": 6,
       "Friday": 2,
@@ -1339,11 +1354,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-09-10",
-    "latest_date_display": "Sep 10, 2026",
+    "latest_date": "2026-09-20",
+    "latest_date_display": "Sep 20, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Like a Filled Crossword",
-    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-10-2026.html"
+    "latest_title": "Working Pretty Dam Hard?",
+    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-20-2026.html"
   },
-  "last_updated": "2026-09-19T15:14:08Z"
+  "last_updated": "2026-09-20T15:18:46Z"
 }
