@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-09-24",
+      "date_display": "Sep 24, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 9,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Magic 8 Ball\u2019s Optimistic Answer",
+      "full_title": "Magic 8 Ball\u2019s Optimistic Answer (11 Letters)",
+      "letters_clue": "11 Letters",
+      "url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-24-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-09-20",
       "date_display": "Sep 20, 2026",
       "day_of_week": "Sunday",
@@ -1322,9 +1337,9 @@
     }
   ],
   "stats": {
-    "total": 88,
+    "total": 89,
     "venues": {
-      "Slate": 68,
+      "Slate": 69,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1336,15 +1351,15 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 24,
+      "2026": 25,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Thursday": 44,
       "Sunday": 17,
-      "Thursday": 43,
       "Monday": 6,
       "Tuesday": 9,
       "Wednesday": 6,
@@ -1354,11 +1369,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-09-20",
-    "latest_date_display": "Sep 20, 2026",
+    "latest_date": "2026-09-24",
+    "latest_date_display": "Sep 24, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Working Pretty Dam Hard?",
-    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-20-2026.html"
+    "latest_title": "Magic 8 Ball\u2019s Optimistic Answer",
+    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-24-2026.html"
   },
-  "last_updated": "2026-09-23T15:58:23Z"
+  "last_updated": "2026-09-24T16:22:09Z"
 }
