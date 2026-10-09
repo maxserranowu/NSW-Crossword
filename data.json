@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-10-09",
+      "date_display": "Oct 09, 2026",
+      "day_of_week": "Friday",
+      "year": 2026,
+      "month": 10,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Neighborhoods With Seoul Food?",
+      "full_title": "Neighborhoods With Seoul Food? (Six Letters)",
+      "letters_clue": "Six Letters",
+      "url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-9-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-09-24",
       "date_display": "Sep 24, 2026",
       "day_of_week": "Thursday",
@@ -1337,9 +1352,9 @@
     }
   ],
   "stats": {
-    "total": 89,
+    "total": 90,
     "venues": {
-      "Slate": 69,
+      "Slate": 70,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1351,29 +1366,29 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 25,
+      "2026": 26,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Friday": 3,
       "Thursday": 44,
       "Sunday": 17,
       "Monday": 6,
       "Tuesday": 9,
       "Wednesday": 6,
-      "Friday": 2,
       "Saturday": 5
     },
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-09-24",
-    "latest_date_display": "Sep 24, 2026",
+    "latest_date": "2026-10-09",
+    "latest_date_display": "Oct 09, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Magic 8 Ball\u2019s Optimistic Answer",
-    "latest_url": "https://slate.com/life/2026/09/crossword-slate-daily-puzzle-sept-24-2026.html"
+    "latest_title": "Neighborhoods With Seoul Food?",
+    "latest_url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-9-2026.html"
   },
-  "last_updated": "2026-10-08T18:20:01Z"
+  "last_updated": "2026-10-09T17:53:14Z"
 }
