@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-10-22",
+      "date_display": "Oct 22, 2026",
+      "day_of_week": "Thursday",
+      "year": 2026,
+      "month": 10,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "Tiny Snack With Big Curbside Appeal",
+      "full_title": "Tiny Snack With Big Curbside Appeal (10 Letters)",
+      "letters_clue": "10 Letters",
+      "url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-22-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-10-09",
       "date_display": "Oct 09, 2026",
       "day_of_week": "Friday",
@@ -1352,9 +1367,9 @@
     }
   ],
   "stats": {
-    "total": 90,
+    "total": 91,
     "venues": {
-      "Slate": 70,
+      "Slate": 71,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1366,15 +1381,15 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 26,
+      "2026": 27,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Thursday": 45,
       "Friday": 3,
-      "Thursday": 44,
       "Sunday": 17,
       "Monday": 6,
       "Tuesday": 9,
@@ -1384,11 +1399,11 @@
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-10-09",
-    "latest_date_display": "Oct 09, 2026",
+    "latest_date": "2026-10-22",
+    "latest_date_display": "Oct 22, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Neighborhoods With Seoul Food?",
-    "latest_url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-9-2026.html"
+    "latest_title": "Tiny Snack With Big Curbside Appeal",
+    "latest_url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-22-2026.html"
   },
-  "last_updated": "2026-10-21T16:29:30Z"
+  "last_updated": "2026-10-22T16:30:20Z"
 }
