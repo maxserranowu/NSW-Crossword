@@ -1,6 +1,21 @@
 {
   "puzzles": [
     {
+      "date": "2026-11-03",
+      "date_display": "Nov 03, 2026",
+      "day_of_week": "Tuesday",
+      "year": 2026,
+      "month": 11,
+      "venue": "Slate",
+      "venue_short": "Slate",
+      "title": "It Has Tails, but No Tail",
+      "full_title": "It Has Tails, but No Tail (Four Letters)",
+      "letters_clue": "Four Letters",
+      "url": "https://slate.com/life/2026/11/crossword-slate-daily-puzzle-nov-3-2026.html",
+      "co_constructor": null,
+      "puzzle_type": "Daily"
+    },
+    {
       "date": "2026-10-22",
       "date_display": "Oct 22, 2026",
       "day_of_week": "Thursday",
@@ -1367,9 +1382,9 @@
     }
   ],
   "stats": {
-    "total": 91,
+    "total": 92,
     "venues": {
-      "Slate": 71,
+      "Slate": 72,
       "Puzzmo": 5,
       "Lil AVC X": 8,
       "AVCX": 1,
@@ -1381,29 +1396,29 @@
       "WSJ": 1
     },
     "years": {
-      "2026": 27,
+      "2026": 28,
       "2025": 32,
       "2024": 17,
       "2023": 12,
       "2022": 3
     },
     "days": {
+      "Tuesday": 10,
       "Thursday": 45,
       "Friday": 3,
       "Sunday": 17,
       "Monday": 6,
-      "Tuesday": 9,
       "Wednesday": 6,
       "Saturday": 5
     },
     "first_date": "2022-06-22",
     "first_date_display": "Jun 22, 2022",
     "first_venue": "WSJ",
-    "latest_date": "2026-10-22",
-    "latest_date_display": "Oct 22, 2026",
+    "latest_date": "2026-11-03",
+    "latest_date_display": "Nov 03, 2026",
     "latest_venue": "Slate",
-    "latest_title": "Tiny Snack With Big Curbside Appeal",
-    "latest_url": "https://slate.com/life/2026/10/crossword-slate-daily-puzzle-oct-22-2026.html"
+    "latest_title": "It Has Tails, but No Tail",
+    "latest_url": "https://slate.com/life/2026/11/crossword-slate-daily-puzzle-nov-3-2026.html"
   },
-  "last_updated": "2026-11-02T21:18:26Z"
+  "last_updated": "2026-11-03T18:57:32Z"
 }
